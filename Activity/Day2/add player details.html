@@ -1,0 +1,64 @@
+<!Doctype.html>
+<html>
+
+<head>
+    <style>
+        .heading {
+            font-style: italic;
+            color: #708090
+        }
+    </style>
+</head>
+<title>Players Details</title>
+
+<body>
+    <form>
+        <div style="background-color:blue;border:2px;height:60px;text-align:center">
+            <h2 style="color:white;">Player Details</h2>
+        </div>
+        <p>
+            <div class="heading" style="background-color:#87CEEB;">Name*<input type="text" id="name" autofocus required>
+                <p>
+                    DOB*<input type="date" id="dob" pattern="\d{1,2}/\d{1,2}/\d{4}" required>
+                    <p>
+                        Age*<input type="number" id="age" required>
+                        <p>
+                            Email Id*<input type="email" id="Email id" pattern=[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$ required>
+                            <p>
+                                Country*<select required>
+<option>India</option>
+<option>America</option>
+<option>others</options>
+</select>
+                                <p>
+                                    Skill*<input type="checkbox" id="skill">
+                                    <Label style="color:black">Batting</label>
+                                    <input type="checkbox" id="skill">
+                                    <Label style="color:black">Bowling</label>
+                                    <p>
+                                        Bat Style<input type="radio" id="bat">
+                                        <Label style="color:black">Right Handed</label>
+                                        <input type="radio" id="bat">
+                                        <Label style="color:black">Left Handed</label>
+                                        <p>
+                                            Bowl Style<input type="radio" id="bowl">
+                                            <Label style="color:black">Bating</label>
+                                            <input type="radio" id="bowl">
+                                            <Label style="color:black">Bowling</label>
+                                            <p>
+                                                Matches*<input type="number" id="matches" required>
+                                                <p>
+                                                    Runs*<input type="number" id="runs" required>
+                                                    <p>
+                                                        Wickets*<input type="number" id="wickets" required>
+                                                        <p>
+                                                            Achievements<textarea id="achieve" rows "3"></textarea>
+            </div>
+            <p>
+                <div style="background-color:blue;border:2px;height:60px;text-align:center">
+                    <input type="Submit" id="submitid"><input type="Reset" id="resetid">
+                </div>
+    </form>
+</body>
+
+</html>
